@@ -39,7 +39,7 @@ export default function Aside() {
       <div class="body-container">
         <ul class="chat-list">
           {users.map((user) => { 
-            <Link to={"/chat1"} class="chat-box" id="Msg">
+            <Link to={`/chat${user.id}`} class="chat-box" id="Msg">
               <div class="chat-img">
                 <img src={user.photoUrl} alt="ava" />
               </div>
